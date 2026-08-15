@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bright Path Tutoring provides friendly, accessible tutoring and academic support.">
+    <title>What I Teach | Bright Path Tutoring</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <section>
+            <h1>Bright Path Tutoring</h1>
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="services.html" aria-current="page">WHAT I TEACH</a></li>
+                    <li><a href="price.html">WHAT IT COSTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main id="main-content">
+
+        <section aria-labelledby="services-heading">
+            <h2 id="services-heading">What I Teach</h2>
+            <p>
+                Tutoring can be focused on one subject or a combination of skills.
+                Bring your class materials, assignment, or questions and we can
+                build the session around what you need most.
+            </p>
+            <figure>
+                <img src="assets/images/math.jpg" width="557" height="550"
+                     alt="Colorful educational illustration featuring mathematics symbols and the word Maths">
+                <figcaption>Math support can include reviewing concepts, practice, and problem-solving.</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="subjects-heading">
+            <h2 id="subjects-heading">Subjects and skills</h2>
+            <article>
+                <h3>Math</h3>
+                <p>Basic mathematics, problem-solving, formulas, homework review, and step-by-step practice.</p>
+            </article>
+            <article>
+                <h3>Science</h3>
+                <p>Study support, vocabulary, reading science questions, and understanding core concepts.</p>
+            </article>
+            <article>
+                <h3>English and language</h3>
+                <p>Grammar, vocabulary, reading comprehension, writing organization, and language practice.</p>
+            </article>
+            <article>
+                <h3>Study skills</h3>
+                <p>Note-taking, organization, study routines, assignment planning, and test preparation.</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="more-subjects">
+            <h2 id="more-subjects">Learning beyond one subject</h2>
+            <figure>
+                <img src="assets/images/science.jpg" width="584" height="525"
+                     alt="Illustration of two students conducting a science experiment">
+                <figcaption>Science learning can become easier when concepts are connected to examples.</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/language.jpg" width="315" height="160"
+                     alt="Blue educational illustration filled with language and grammar words">
+                <figcaption>Language skills grow through reading, vocabulary, practice, and conversation.</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <p><strong>Bright Path Tutoring</strong></p>
+            <p>Patient support. Clear explanations. Confident learners.</p>
+            <small>&copy; <span data-year></span> Bright Path Tutoring.</small>
+        </section>
+    </footer>
+
+    <script>
+        // Embedded JavaScript: keep the footer year current and provide a small
+        // client-side check before the contact form is submitted.
+        document.querySelectorAll("[data-year]").forEach(function (element) {
+            element.textContent = new Date().getFullYear();
+        });
+
+        const form = document.querySelector("form");
+        if (form) {
+            form.addEventListener("submit", function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    form.reportValidity();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

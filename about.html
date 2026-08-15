@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bright Path Tutoring provides friendly, accessible tutoring and academic support.">
+    <title>About Me | Bright Path Tutoring</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <section>
+            <h1>Bright Path Tutoring</h1>
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" aria-current="page">ABOUT ME</a></li>
+                    <li><a href="services.html">WHAT I TEACH</a></li>
+                    <li><a href="price.html">WHAT IT COSTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main id="main-content">
+
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>
+                Hi! I believe that good tutoring is more than giving someone the
+                correct answer. It is about helping a learner understand the idea,
+                practice it, and become comfortable doing it independently.
+            </p>
+            <p>
+                My tutoring style is friendly, organized, and patient. I encourage
+                questions and adjust the pace when a topic needs more time.
+            </p>
+            <figure>
+                <img src="assets/images/me.JPG" width="685" height="448"
+                     alt="Illustration of a student using a computer to learn with books and school materials around the screen">
+                <figcaption>Different learners may need different ways to understand the same idea.</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="approach-heading">
+            <h2 id="approach-heading">My approach</h2>
+            <article>
+                <h3>1. Start with your goal</h3>
+                <p>We identify the assignment, topic, skill, or study goal you want to improve.</p>
+            </article>
+            <article>
+                <h3>2. Break it into steps</h3>
+                <p>Large or confusing topics are divided into smaller ideas that are easier to work with.</p>
+            </article>
+            <article>
+                <h3>3. Practice together</h3>
+                <p>You try examples while I provide guidance, explanations, and feedback.</p>
+            </article>
+            <article>
+                <h3>4. Review and repeat</h3>
+                <p>We summarize the important points and identify what you should practice next.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Accessibility is important</h2>
+            <p>
+                I aim to make tutoring welcoming for adults with disabilities and
+                learners with different communication or learning needs. If you need
+                a different pace, readable materials, breaks, or another reasonable
+                accommodation, mention it when you contact me so we can plan ahead.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <section>
+            <p><strong>Bright Path Tutoring</strong></p>
+            <p>Patient support. Clear explanations. Confident learners.</p>
+            <small>&copy; <span data-year></span> Bright Path Tutoring.</small>
+        </section>
+    </footer>
+
+    <script>
+        // Embedded JavaScript: keep the footer year current and provide a small
+        // client-side check before the contact form is submitted.
+        document.querySelectorAll("[data-year]").forEach(function (element) {
+            element.textContent = new Date().getFullYear();
+        });
+
+        const form = document.querySelector("form");
+        if (form) {
+            form.addEventListener("submit", function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    form.reportValidity();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

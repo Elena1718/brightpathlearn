@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bright Path Tutoring provides friendly, accessible tutoring and academic support.">
+    <title>Home | Bright Path Tutoring</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <section>
+            <h1>Bright Path Tutoring</h1>
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="services.html">WHAT I TEACH</a></li>
+                    <li><a href="price.html">WHAT IT COSTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main id="main-content">
+
+        <section>
+            <article>
+                <p>Learn with confidence</p>
+                <h2>Welcome to a better way to learn.</h2>
+                <p>
+                    Tutoring should feel encouraging, understandable, and personal.
+                    I help students and adult learners turn difficult subjects into
+                    manageable steps with patient explanations and practical practice.
+                </p>
+                <p>
+                    <a href="services.html">Explore what I teach</a> or
+                    <a href="contact.html">send me a message</a> to get started.
+                </p>
+            </article>
+            <figure>
+                <img src="assets/images/welcome.jpg" width="1300" height="816"
+                     alt="Colorful illustration of students learning above the word Welcome">
+                <figcaption>A welcoming learning environment where questions are encouraged.</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="home-benefits">
+            <h2 id="home-benefits">Why choose tutoring?</h2>
+            <article>
+                <h3>Patient explanations</h3>
+                <p>We slow down, review the basics, and explain concepts in plain language.</p>
+            </article>
+            <article>
+                <h3>Practice that makes sense</h3>
+                <p>You get opportunities to work through examples instead of only memorizing information.</p>
+            </article>
+            <article>
+                <h3>Support for your goals</h3>
+                <p>Sessions can focus on homework, studying, vocabulary, writing, or preparing for class.</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="home-tutoring">
+            <h2 id="home-tutoring">Learning is a process</h2>
+            <figure>
+                <img src="assets/images/tutoring.jpg" width="515" height="388"
+                     alt="Illustration with the word tutoring surrounded by education and study terms">
+                <figcaption>Small steps and consistent practice can make a big difference.</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <p><strong>Bright Path Tutoring</strong></p>
+            <p>Patient support. Clear explanations. Confident learners.</p>
+            <small>&copy; <span data-year></span> Bright Path Tutoring.</small>
+        </section>
+    </footer>
+
+    <script>
+        // Embedded JavaScript: keep the footer year current and provide a small
+        // client-side check before the contact form is submitted.
+        document.querySelectorAll("[data-year]").forEach(function (element) {
+            element.textContent = new Date().getFullYear();
+        });
+
+        const form = document.querySelector("form");
+        if (form) {
+            form.addEventListener("submit", function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    form.reportValidity();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bright Path Tutoring provides friendly, accessible tutoring and academic support.">
+    <title>What It Costs | Bright Path Tutoring</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <section>
+            <h1>Bright Path Tutoring</h1>
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="services.html">WHAT I TEACH</a></li>
+                    <li><a href="price.html" aria-current="page">WHAT IT COSTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main id="main-content">
+
+        <section aria-labelledby="price-heading">
+            <h2 id="price-heading">What It Costs</h2>
+            <p>
+                Simple pricing makes it easier to plan ahead. These are sample
+                starting rates and can be changed to match your final tutoring
+                business.
+            </p>
+            <figure>
+                <img src="assets/images/reading.jpg" width="738" height="414"
+                     alt="Illustration of a person jumping over stacks of books while studying">
+                <figcaption>Bring the books and class materials you already use.</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="rates-heading">
+            <h2 id="rates-heading">Sample tutoring rates</h2>
+            <table>
+                <caption>Current sample session options</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Session</th>
+                        <th scope="col">Length</th>
+                        <th scope="col">Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Short session</th>
+                        <td>30 minutes</td>
+                        <td class="price">$15</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Standard session</th>
+                        <td>1 hour</td>
+                        <td class="price">$20</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Extended session</th>
+                        <td>1.5 hours</td>
+                        <td class="price">$30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside>
+            <h2>Before your session</h2>
+            <ul>
+                <li>Bring your assignment, notes, textbook, or study guide.</li>
+                <li>Tell me which topic is giving you the most trouble.</li>
+                <li>Let me know if you need a specific pace or accommodation.</li>
+                <li>We will focus the session on your most important goal first.</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+        <section>
+            <p><strong>Bright Path Tutoring</strong></p>
+            <p>Patient support. Clear explanations. Confident learners.</p>
+            <small>&copy; <span data-year></span> Bright Path Tutoring.</small>
+        </section>
+    </footer>
+
+    <script>
+        // Embedded JavaScript: keep the footer year current and provide a small
+        // client-side check before the contact form is submitted.
+        document.querySelectorAll("[data-year]").forEach(function (element) {
+            element.textContent = new Date().getFullYear();
+        });
+
+        const form = document.querySelector("form");
+        if (form) {
+            form.addEventListener("submit", function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    form.reportValidity();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
